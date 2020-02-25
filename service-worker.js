@@ -1,8 +1,9 @@
-var CACHE_NAME= 'test_pwa';
+var CACHE_NAME= 'test-pwa';
 var FILES_TO_CACHE= [
 '/',
-'index.html',
-'css/style.css'
+'/index.html',
+'/css/style.css',
+ '/js/main.js'
 ];
 
 
