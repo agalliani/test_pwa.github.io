@@ -22,7 +22,19 @@
   <div class="container">
     <h1 class="title">Hello World!</h1>
   </div>
-  <script src="js/main.js></script>
+  <script>
+               window.onload = () => {
+  'use strict';
+
+  if ('serviceWorker' in navigator) {
+      
+    navigator.serviceWorker
+        .register('./service-worker.js');
+  }
+}
+
+    </script>
   
 </body>
+    
 </html>
