@@ -1,6 +1,8 @@
 var CACHE_NAME= 'test-pwa';
 var FILES_TO_CACHE= [
-'/index.html',
+'index.html',
+  'main.dart.js',
+  'main.dart.js.map'
 ];
 
 
