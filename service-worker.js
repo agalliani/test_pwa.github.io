@@ -1,6 +1,6 @@
 var CACHE_NAME= 'test-pwa';
 var FILES_TO_CACHE= [
-'/index.html',
+'index.html',
 ];
 
 
