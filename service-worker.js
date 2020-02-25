@@ -3,7 +3,6 @@ var FILES_TO_CACHE= [
 '/',
 '/index.html',
 '/css/style.css',
- '/js/main.js'
 ];
 
 
