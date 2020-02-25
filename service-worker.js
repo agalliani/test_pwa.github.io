@@ -2,7 +2,11 @@ var CACHE_NAME= 'test-pwa';
 var FILES_TO_CACHE= [
 'index.html',
   'main.dart.js',
-  'main.dart.js.map'
+  'main.dart.js.map',
+  'assets/AssetManifest.json',
+  'assets/FontManifest.json',
+  'assets/fonts/MaterialIcons-Regular.ttf',
+  'assets/packages/cupertino_icons/assets/CupertinoIcons.ttf'
 ];
 
 
