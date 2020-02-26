@@ -2,9 +2,18 @@
 This is a useful template to build basic Progressive Web Apps.
 
 ## First Step:
+Create
+- index.html
+- service-worker.js: here we only have *install* and *fetch* functions.
+- manifest.json
+- manage icons
+
 Following this tutorial to create a simple pwa: https://medium.com/james-johnson/a-simple-progressive-web-app-tutorial-f9708e5f2605
 
+
 ## Second Step:
+We choose a chaching strategy and then build all the needed functions.
+
 Expand the pwa's behavior following some steps from google's documentation: https://codelabs.developers.google.com/codelabs/your-first-pwapp/#0 
 
 ## Third step
