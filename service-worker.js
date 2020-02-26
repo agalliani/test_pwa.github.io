@@ -38,14 +38,11 @@ self.addEventListener('fetch', function(e) {
       caches.open('CACHE_NAME').then(function(cache) {
       return cache.match(e.request).then(
           function(response) {
-              if(e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin'){
-              var fetchPromise = fetch(e.request).then(
-                  function(networkResponse) {
-                    cache.put(e.request, networkResponse.clone());
-                      return networkResponse;
+              var fetchPromise = fetch(e.request).then(function(networkResponse) {
+                  cache.put(e.request, networkResponse.clone());
+                  return networkResponse;
               })
-              }
-              return response || fetchPromise;
+        return response || fetchPromise;
       })
     })
   );
