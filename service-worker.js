@@ -48,7 +48,7 @@ self.addEventListener('fetch', function(e) {
 });
 
 
-self.addEventListener('activate', (evt) => {
+self.addEventListener('activate', (e) => {
   console.log('[ServiceWorker] Activate');
   //Remove previous cached data from disk.
 e.waitUntil(
