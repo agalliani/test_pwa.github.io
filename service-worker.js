@@ -36,9 +36,9 @@ self.addEventListener('fetch', function(e) {
 });
 */
       caches.open('CACHE_NAME').then(function(cache) {
-      return cache.match(event.request).then(function(response) {
-        var fetchPromise = fetch(event.request).then(function(networkResponse) {
-          cache.put(event.request, networkResponse.clone());
+      return cache.match(e.request).then(function(response) {
+        var fetchPromise = fetch(e.request).then(function(networkResponse) {
+          cache.put(e.request, networkResponse.clone());
           return networkResponse;
         })
         return response || fetchPromise;
