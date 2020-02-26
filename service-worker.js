@@ -23,13 +23,13 @@ self.addEventListener('install', function(e) {
 self.addEventListener('fetch', function(e) {
   e.respondWith(
       
-    caches.match(e.request).then(function(response) {
+    /*caches.match(e.request).then(function(response) {
       return response || fetch(e.request);
     })
   );
 });
-
-    /*  caches.open('CACHE_NAME').then(function(cache) {
+*/
+      caches.open('CACHE_NAME').then(function(cache) {
       return cache.match(event.request).then(function(response) {
         var fetchPromise = fetch(event.request).then(function(networkResponse) {
           cache.put(event.request, networkResponse.clone());
@@ -40,4 +40,3 @@ self.addEventListener('fetch', function(e) {
     })
   );
 });
-*/
