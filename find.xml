@@ -1,7 +1,7 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Project 'ledplate_pwa'" />
-    <option name="defaultScopeName" value="Project 'ledplate_pwa'" />
-    <option name="SEARCH_SCOPE" value="Project 'ledplate_pwa'" />
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="SEARCH_SCOPE" value="All Places" />
   </component>
 </application>
