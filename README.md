@@ -1,6 +1,8 @@
 # test_pwa
 This is a useful template to build basic Progressive Web Apps.
 
+Try it: <https://galliaandre.github.io/test_pwa.github.io/>
+
 ## First Step:
 Create
 - index.html
