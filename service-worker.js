@@ -12,6 +12,8 @@ var FILES_TO_CACHE= [
 
 /* Start the service worker and cache all of the app's content */
 self.addEventListener('install', function(e) {
+    console.log('[ServiceWorker] Install');
+    
   e.waitUntil(
     caches.open(CACHE_NAME).then(function(cache) {
       return cache.addAll(FILES_TO_CACHE);
@@ -23,6 +25,8 @@ self.addEventListener('install', function(e) {
 
 /* Serve cached content when offline or new (if there are) when online. STALE-WHILE-REVALIDATE */
 self.addEventListener('fetch', function(e) {
+  console.log('[ServiceWorker] Fetch', e.request.url);
+
   e.respondWith(
       
     /*caches.match(e.request).then(function(response) {
@@ -43,8 +47,11 @@ self.addEventListener('fetch', function(e) {
   );
 });
 
-//Remove previous cached data from disk.
-evt.waitUntil(
+
+self.addEventListener('activate', (evt) => {
+  console.log('[ServiceWorker] Activate');
+  //Remove previous cached data from disk.
+e.waitUntil(
     caches.keys().then((keyList) => {
       return Promise.all(keyList.map((key) => {
         if (key !== CACHE_NAME) {
@@ -54,3 +61,6 @@ evt.waitUntil(
       }));
     })
 );
+  self.clients.claim();
+});
+
