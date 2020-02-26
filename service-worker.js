@@ -19,6 +19,8 @@ self.addEventListener('install', function(e) {
   );
 });
 
+
+
 /* Serve cached content when offline or new (if there are) when online. STALE-WHILE-REVALIDATE */
 self.addEventListener('fetch', function(e) {
   e.respondWith(
@@ -40,3 +42,15 @@ self.addEventListener('fetch', function(e) {
     })
   );
 });
+
+//Remove previous cached data from disk.
+evt.waitUntil(
+    caches.keys().then((keyList) => {
+      return Promise.all(keyList.map((key) => {
+        if (key !== CACHE_NAME) {
+          console.log('[ServiceWorker] Removing old cache', key);
+          return caches.delete(key);
+        }
+      }));
+    })
+);
