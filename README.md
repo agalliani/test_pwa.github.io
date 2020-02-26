@@ -3,6 +3,8 @@ This is a useful template to build basic Progressive Web Apps.
 
 Try it: <https://galliaandre.github.io/test_pwa.github.io/>
 
+As you can see in the browser bar appears the ***+Install*** button. This PWA works also on browser and on smartphones.
+
 ## First Step:
 Create
 - index.html
