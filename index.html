@@ -19,7 +19,8 @@
 <body class="fullscreen">
    
  <div class="container">
-   loading
+    <h1 class="title">loading</h1>
+  
 <div class="spinner">
   <div class="rect1"></div>
   <div class="rect2"></div>
@@ -27,7 +28,7 @@
   <div class="rect4"></div>
   <div class="rect5"></div>
 </div>
-  </div>
+  
     
     
   <script>
@@ -107,15 +108,12 @@
     -webkit-transform: scaleY(1.0);
   }
 }
-body {
-  font-family: sans-serif;
-}
-
 /* Make content area fill the entire browser window */
+html,
 .fullscreen {
   display: flex;
   height: 100%;
-  margin: auto;
+  margin: 0;
   padding: 0;
   width: 100%;
 }
@@ -126,5 +124,8 @@ body {
   text-align: center;
 }
 
+.title {
+  font-size: 3rem;
+}
 
     </style>
