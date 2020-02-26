@@ -18,6 +18,9 @@ Following this tutorial to create a simple pwa: https://medium.com/james-johnson
 ## Second Step:
 We choose a chaching strategy and then build all the needed functions.
 
+In this case I use the ***stale-while-revalidate*** strategy: [![stale-while-revalidate](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")]
+
+
 Expand the pwa's behavior following some steps from google's documentation: https://codelabs.developers.google.com/codelabs/your-first-pwapp/#0 
 
 ## Third step
