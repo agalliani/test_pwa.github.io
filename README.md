@@ -31,7 +31,7 @@ Implement the flutter's code building the web app from android studio.
 
 -----------------------------
 
-**Important:** flutter is a Dart framework. In order to be used in web it have to be built, then Android Studio (or other equivalent alternatives) will give you a js file with the same behavior of the dart files coded for the native app.
+**Important:** Flutter is a Dart framework. In order to be used in web it have to be built, then Android Studio (or other equivalent alternatives compatible with this framework) will give you a js file with the same behavior of the dart files coded for the native app.
 
 Run the following command to generate a release build: ``` $ flutter build web```.
 
